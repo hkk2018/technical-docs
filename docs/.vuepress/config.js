@@ -11,7 +11,8 @@ module.exports = {
         sidebar: {
             '/一般/': [
                 '',     /* /foo/ */
-                'dotNet',  /* /foo/one.html */
+                'DotNet',  /* /foo/one.html */
+                'SqlThings',
             ],
             '/TS/': [
                 '',      /* /bar/ */
