@@ -1,13 +1,12 @@
-# .net with Visual Studio
+# .Net with VS
 
-remove unused using namespaces
-Ctrl + R + G
+Remove unused namespaces : `Ctrl + R + G`
 
-整理code ctrl + k +d
+Beautify code : `ctrl + k + d`
 
-rename variable ctrl +r,+r 
+Rename variable : `ctrl + r + r`
 
-去空行：
+Remove line break (using Regex) :
 
     (^ *\r\n)
 
