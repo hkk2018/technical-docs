@@ -7,6 +7,8 @@ Ctrl + R + G
 
 rename variable ctrl +r,+r 
 
-去空行
-(?<=\r\n)\r\n
-https://blog.csdn.net/zyghs/article/details/54343314
+去空行：
+
+    (^ *\r\n)
+
+`(^ *\r\n)`: kill line break which probably contains spaces ahead.

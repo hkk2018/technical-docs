@@ -13,7 +13,8 @@ module.exports = {
                 '',     /* /foo/ */
                 'DotNet',  /* /foo/one.html */
                 'SqlThings',
-                'Url'
+                'Url',
+                'Regex'
             ],
             '/TS/': [
                 '',      /* /bar/ */
