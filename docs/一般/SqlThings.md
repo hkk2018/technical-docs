@@ -8,8 +8,7 @@
 
     WHERE if(gameType IS NULL , 1 ,if(gameType=gid,1,0) )
 
-不過遇到了**Mssql**，雖然它有`iif()`可以用，但它好像不太能作到最後總結成一個布林值，
-比如說(待補待測試)...
+不過遇到了**Mssql**，雖然它有`iif()`可以用，不過不像**Mysql**可以直接回傳1，它需要以這種形式使用`1=iif(expression,1,0)`
 不過也因此，我才想到一個更簡單的方法來處理條件過濾：
 
     WHERE (gameType IS NULL OR (gameType=gid) )
