@@ -3,17 +3,22 @@ module.exports = {
     themeConfig: {
         nav: [
 
-            { text: '一般', link: '/一般/DotNet' },
+            { text: '一般', link: '/一般/Regex' },
+            { text: 'MicroSoft', link: '/MicroSoft/DotNet' },
             { text: 'TS', link: '/TS/' },
             { text: 'Unreal', link: '/Unreal/FAQ' },
 
         ],
         sidebar: {
             '/一般/': [
-                'DotNet',  /* /foo/one.html */
+                'Regex',
                 'SqlThings',
                 'Url',
-                'Regex'
+            ],
+            '/MicroSoft/': [
+                'DotNet',  /* /foo/one.html */
+                'DB',
+
             ],
             '/TS/': [
                 '',      /* /bar/ */
