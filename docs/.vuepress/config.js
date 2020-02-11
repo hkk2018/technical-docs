@@ -3,25 +3,26 @@ module.exports = {
     themeConfig: {
         nav: [
 
-            { text: '一般', link: '/一般/' },
+            { text: '一般', link: '/一般/DotNet' },
             { text: 'TS', link: '/TS/' },
             { text: 'Unreal', link: '/Unreal/testnodefualt.html' },
 
         ],
         sidebar: {
             '/一般/': [
-                '',     /* /foo/ */
-                'DDotNet',  /* /foo/one.html */
+                'DotNet',  /* /foo/one.html */
                 'SqlThings',
                 'Url',
                 'Regex'
             ],
             '/TS/': [
                 '',      /* /bar/ */
+                'FAQ',
+
 
             ],
             '/Unreal/': [
-                'testnodefualt', /* /bar/three.html */
+                'FAQ', /* /bar/three.html */
             ],
 
             // fallback
@@ -31,6 +32,7 @@ module.exports = {
                 // 'about'    /* /about.html */
             ]
         }
-    }
+    },
+    plugins: [['@dovyp/vuepress-plugin-clipboard-copy', true]]
 
 }

@@ -1,6 +1,6 @@
 # .Net
 
-## editor shout cuts
+## Editor Short Cuts
 
 Remove unused namespaces : `Ctrl + R + G`
 
@@ -22,3 +22,9 @@ Remove line break (using Regex) :
     Request.form["c"] != null , .GetType()==System.String
     Request.form["d"].GetType()==System.String
 
+Request.form["x"] | ==null | .GetType()
+------------------|:------:|---------------
+a                 | true   |  throws Error!
+b                 | false  |  System.String
+c                 | false  |  System.String
+d                 | false  |  System.String
