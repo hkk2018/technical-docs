@@ -14,6 +14,7 @@ module.exports = {
                 'Regex',
                 'SqlThings',
                 'Url',
+                'Git'
             ],
             '/MicroSoft/': [
                 'DotNet',  /* /foo/one.html */
