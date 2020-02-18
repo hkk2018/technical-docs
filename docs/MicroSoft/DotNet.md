@@ -28,3 +28,10 @@ a                 | true   |  throws Error!
 b                 | false  |  System.String
 c                 | false  |  System.String
 d                 | false  |  System.String
+
+## Page Life Cycle
+
+Best References:
+
+1.[[Asp.Net] Web Form 的事件簡介](https://careychen.pixnet.net/blog/post/22573436-%5Basp.net%5D-web-form-%E7%9A%84%E4%BA%8B%E4%BB%B6%E7%B0%A1%E4%BB%8B)
+2.[ASP.NET - Life Cycle](https://www.tutorialspoint.com/asp.net/asp.net_life_cycle.htm)
