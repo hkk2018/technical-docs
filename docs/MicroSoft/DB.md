@@ -23,3 +23,26 @@ ref : [解決SQL Server管理器無法連接遠端資料庫的問題](http://sas
 * Probably save some CRUD scripts manually
 
 [1]:https://blog.miniasp.com/post/2008/06/05/Find-out-T-SQL-commands-generated-by-SQL-Server-Management-Studio
+
+## Make values into dot-separated string by Xml Path
+
+Senario：CMS needs to know relationship between new title and its categories(1 to n), but web doesn't for the sake of reducing internete usage.  
+（Also for the compatibility against older version sql server, otherwise String_split）
+
+Example:
+
+    SELECT
+        A,B,...,
+        iif ( @isWebDisplay = 1, '',
+            SUBSTRING(
+                (
+                    SELECT (',' + CAST(cateId AS varchar(100)))
+                    FROM [AgSportDb].[dbo].NewTitleToCate
+                    WHERE NewTitleToCate.newsTitleId = titleId
+                    FOR xml PATH ('')
+                ), 2, 100
+            )
+        ) as cateIds
+
+it's fine to set 3rd param of SUBSTRING with an aribitrary value as long as it's big enough.  
+Great ref：[灵活运用 SQL SERVER FOR XML PATH](https://www.cnblogs.com/doubleliang/archive/2011/07/06/2098775.html)
