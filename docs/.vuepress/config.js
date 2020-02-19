@@ -19,6 +19,7 @@ module.exports = {
             '/MicroSoft/': [
                 'DotNet',  /* /foo/one.html */
                 'DB',
+                'Win10',
 
             ],
             '/TS/': [
