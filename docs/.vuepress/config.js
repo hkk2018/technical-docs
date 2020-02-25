@@ -5,6 +5,7 @@ module.exports = {
 
             { text: '一般', link: '/一般/Regex' },
             { text: 'MicroSoft', link: '/MicroSoft/DotNet' },
+            { text: 'JS', link: '/JS/Quirks' },
             { text: 'TS', link: '/TS/' },
             { text: 'Unreal', link: '/Unreal/FAQ' },
 
@@ -14,7 +15,8 @@ module.exports = {
                 'Regex',
                 'SqlThings',
                 'Url',
-                'Git'
+                'Git',
+                'Gimp',
             ],
             '/MicroSoft/': [
                 'DotNet',  /* /foo/one.html */
@@ -22,11 +24,14 @@ module.exports = {
                 'Win10',
 
             ],
+            '/JS/': [
+                'Quirks',
+
+
+            ],
             '/TS/': [
                 '',      /* /bar/ */
                 'FAQ',
-
-
             ],
             '/Unreal/': [
                 'FAQ', /* /bar/three.html */
