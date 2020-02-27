@@ -46,3 +46,7 @@ Example:
 
 it's fine to set 3rd param of SUBSTRING with an aribitrary value as long as it's big enough.  
 Great ref：[灵活运用 SQL SERVER FOR XML PATH](https://www.cnblogs.com/doubleliang/archive/2011/07/06/2098775.html)
+
+## T-Sql Formatter (won't change case of variables)
+
+[Sql Formatter](https://sql-format.com/)
