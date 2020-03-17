@@ -104,3 +104,9 @@ Due to `Examine Order` changing, once staisfying null condition, the matching su
 
 reference:
 [咻咻的筆記小站](https://hengxiuxu.blogspot.com/2017/10/regular-expression.html)
+
+## 實戰紀錄
+
+1.去除圖片url中間含有不等的../符號，但是沒有該符號的不挑出來
+
+    src=&quot;(../)+?assets
