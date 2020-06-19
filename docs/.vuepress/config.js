@@ -21,6 +21,7 @@ module.exports = {
             '/MicroSoft/': [
                 'DotNet',  /* /foo/one.html */
                 'DB',
+                'DB-syntax',
                 'Win10',
 
             ],

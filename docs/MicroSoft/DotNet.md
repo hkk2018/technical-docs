@@ -59,3 +59,6 @@ If it didnt' run as expected, check:
 
 [ASP.NET 簡史](https://blog.darkthread.net/blog/aspnet-history/)
 
+## 在Html tag上作Databinding的時候，出現伺服器標記語法錯誤
+
+去掉runat="server"可能可以修好。
