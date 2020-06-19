@@ -26,7 +26,8 @@ module.exports = {
             ],
             '/JS/': [
                 'Quirks',
-                'Notes'
+                'Notes',
+                'NodeJs'
             ],
             '/TS/': [
                 '',      /* /bar/ */
