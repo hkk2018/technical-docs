@@ -1,6 +1,14 @@
 # Sql Server語法
 
-要從SP取得result table:
+## Drop temp table
+
+        IF object_id('tempdb..#temp') IS NOT NULL
+        BEGIN
+        DROP TABLE #temp
+        END
+
+## 從SP取得result table
+
 [ref](https://stackoverflow.com/questions/653714/insert-results-of-a-stored-procedure-into-a-temporary-table)
 
 1. 使用SELECT INTO (不用宣告table) 要 Linking Servers。
