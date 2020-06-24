@@ -30,3 +30,23 @@
 
     SELECT TOP(0) * INTO #temp FROM table-valued-func(@gameId,DEFAULT);
 
+## Inserted.id
+
+### Get in C#
+
+    INSERT INTO MyTable(Name, Address, PhoneNo)
+    OUTPUT INSERTED.ID
+    VALUES ('Yatrix', '1234 Address Stuff', '1112223333')
+    DECLARE @OutputTbl TABLE (ID INT)
+
+PS: by .ExecuteScalar()
+
+### Get in sql
+
+    DECLARE @OutputTbl TABLE (ID INT)
+
+    INSERT INTO MyTable(Name, Address, PhoneNo)
+    OUTPUT INSERTED.ID INTO @OutputTbl(ID)
+    VALUES ('Yatrix', '1234 Address Stuff', '1112223333')
+
+[ref](https://stackoverflow.com/questions/10999396/how-do-i-use-an-insert-statements-output-clause-to-get-the-identity-value/10999467#10999467)
