@@ -59,3 +59,28 @@ PS: by .ExecuteScalar()
 在X為真時不需要表B=>
     1.讓ON對不準，確保A必無duplicate
     2.此時B的欄位全為null，...處若B有條件會導致A完全搜不到，所以要加(X)OR
+
+### 更新順序
+
+    IF OBJECT_ID('tempdb..#temp') IS NOT NULL
+    BEGIN
+    DROP TABLE #temp
+    END;
+
+    SELECT
+    * INTO #temp
+    FROM [AgSportDb].[dbo].[Sport_EventTypes]
+    WHERE sportTypeId = 2
+    ORDER BY emitterId, displayOrder;
+
+    DBCC CHECKIDENT (Sport_EventTypes, RESEED, 26);
+    DELETE Sport_EventTypes
+    WHERE sportTypeId = 2;
+
+    INSERT INTO [Sport_EventTypes]
+    SELECT
+        [sportTypeId],
+        ...
+        [deleteFlag]
+    FROM #temp
+    ORDER BY emitterId, displayOrder;
