@@ -28,7 +28,8 @@ module.exports = {
             '/JS/': [
                 'Quirks',
                 'Notes',
-                'NodeJs'
+                'NodeJs',
+                'Plugins'
             ],
             '/TS/': [
                 '',      /* /bar/ */
