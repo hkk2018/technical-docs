@@ -23,6 +23,7 @@ module.exports = {
                 'DB',
                 'DB-syntax',
                 'Win10',
+                'PowerShell',
 
             ],
             '/JS/': [
