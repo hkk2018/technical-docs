@@ -17,6 +17,7 @@ module.exports = {
                 'Url',
                 'Git',
                 'Gimp',
+                'Modbus'
             ],
             '/MicroSoft/': [
                 'DotNet',  /* /foo/one.html */
