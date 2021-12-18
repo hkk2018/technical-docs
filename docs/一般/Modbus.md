@@ -21,6 +21,9 @@ https://zhidao.baidu.com/question/270542924.html
 https://kknews.cc/zh-tw/news/9n4gj68.html
 https://makerpro.cc/2019/12/uart-part-1/
 https://ithelp.ithome.com.tw/articles/10251650
+https://ithelp.ithome.com.tw/articles/10226555
+
+https://makerpro.cc/2019/09/modbus-protocol-packet-format/
 
 ## 串列通訊
 hello world
