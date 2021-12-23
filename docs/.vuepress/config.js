@@ -36,6 +36,7 @@ module.exports = {
             '/TS/': [
                 '',      /* /bar/ */
                 'FAQ',
+                'TypeDeclaration',
             ],
             '/Unreal/': [
                 'FAQ', /* /bar/three.html */
