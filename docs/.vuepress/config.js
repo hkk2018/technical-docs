@@ -31,7 +31,8 @@ module.exports = {
                 'Quirks',
                 'Notes',
                 'NodeJs',
-                'Plugins'
+                'Plugins',
+                'Vue'
             ],
             '/TS/': [
                 '',      /* /bar/ */
@@ -41,7 +42,7 @@ module.exports = {
             '/Unreal/': [
                 'FAQ', /* /bar/three.html */
             ],
-            '/Html&Css/':[
+            '/Html&Css/': [
                 'Css'
             ],
             // fallback
