@@ -1,9 +1,8 @@
 module.exports = {
-    title: 'my技術筆記',
+    title: 'hkk技術筆記',
     themeConfig: {
         nav: [
-
-            { text: '一般', link: '/一般/Regex' },
+            { text: '一般', link: '/一般/WebDev' },
             { text: 'MicroSoft', link: '/MicroSoft/DotNet' },
             { text: 'JS', link: '/JS/Quirks' },
             { text: 'TS', link: '/TS/' },
@@ -12,6 +11,7 @@ module.exports = {
         ],
         sidebar: {
             '/一般/': [
+                'WebDev',
                 'Regex',
                 'SqlThings',
                 'Url',
