@@ -18,7 +18,8 @@ module.exports = {
                 'Git',
                 'Gimp',
                 'Modbus',
-                'RemoteOperation'
+                'RemoteOperation',
+                'PrismaJs'
             ],
             '/MicroSoft/': [
                 'DotNet',  /* /foo/one.html */

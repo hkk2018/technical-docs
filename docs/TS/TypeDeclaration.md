@@ -18,4 +18,7 @@
         interface NotAllRequired extends Partial<Data> {};
 
 
-2. 
+
+
+
+2. { key in Type}:any 必須以type來聲明，interface不可。 

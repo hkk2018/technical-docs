@@ -1,0 +1,2 @@
+## 學習備忘
+1. Foreign Key在1-1關係時不用特別加@unique，因為會自動生成。[ref](https://www.prisma.io/docs/concepts/components/prisma-schema/relations/one-to-one-relations#relational-databases)

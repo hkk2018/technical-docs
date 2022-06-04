@@ -1,5 +1,11 @@
 # Regex
-<!-- <test/> -->
+## 基本語法
+
+    /<pattern>/<flag>
+
+1. `/`隨語言而異，如.NET(C#)則以`"`表示。
+2. pattern表示所使用的規則。
+3. flag表示旗幟，會影響匹配的行為，如g表示全局匹配（否則只匹配找到的第一個）。
 ## Set
 
 `[]` : characters to pick up.
@@ -110,3 +116,9 @@ reference:
 1.去除圖片url中間含有不等的../符號，但是沒有該符號的不挑出來
 
     src=&quot;(../)+?assets
+
+
+## 參考資源
+[Regular Expressions for Regular Folk](https://refrf.dev/)：好文
+
+[regex101](https://regex101.com/)：線上Regex編輯器
